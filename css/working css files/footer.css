@@ -1,0 +1,142 @@
+/* ----------------------------------
+FOOTER STYLES
+---------------------------------- */
+
+footer {
+    background-color: #222831;
+    padding: 75px 20px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.signup-form label {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+footer form input[type=email] {
+    display: inline-block;
+    border-radius: 4px 4px 4px 4px;
+    height: 38px;
+    margin-right: 10px;
+    padding: 6px 10px;
+    border: 1px solid #f7f7f7;
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+footer form input[type=submit] {
+    display: inline-block;
+    height: 38px;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid #f7f7f7;
+    margin: 0;
+    padding: 6px 10px;
+    background-color: #f5b553;
+    transition: background .2s ease;
+}
+
+footer form input[type=submit]:hover {
+    background-color: #222831;
+    cursor: pointer;
+}
+
+.copyright {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social li {
+    padding: 10px;
+}
+
+.social p {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.social a {
+    color: #a7a7a7;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2.5rem;
+    transition: color .2s ease
+}
+
+.social a:hover {
+    color: #f5b553;
+}
+
+
+/* ---------------------------------
+FOOTER MEDIA QUERIES
+----------------------------------*/
+
+@media screen and (max-width: 1070px) {
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .copyright {
+        order: 2;
+        grid-column: 1/3;
+    }
+    .social {
+        margin-bottom: 40px;
+        align-items: flex-end;
+    }
+    .social ul {
+        justify-content: flex-end;
+    }
+    .social li {
+        padding: 0;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .signup-form {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .copyright {
+        grid-column: auto;
+    }
+    .social {
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .social ul {
+        justify-content: center;
+    }
+    .social li {
+        margin: 0 25px;
+    }
+}

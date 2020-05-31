@@ -1,0 +1,101 @@
+@media screen and (max-width: 1070px) {
+    .title {
+        padding-left: 20px;
+    }
+    .title h2 {
+        font-size: 5.2rem;
+        margin-right: 40px;
+        color: blue;
+    }
+    .title h3 {
+        font-size: 3rem;
+    }
+}
+
+
+/* medium display */
+
+@media (max-width:768px) {
+    .title h2 {
+        display: block;
+        font-size: 6rem;
+        padding: 0;
+        margin: 0 0 50px 0;
+    }
+    .title h3 {
+        font-size: 3rem;
+    }
+    #about .container {
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+    #about h2 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .about-info {
+        flex: 1;
+        order: 2;
+    }
+    .about-image {
+        max-width: 800px;
+        width: 100%;
+    }
+}
+
+
+/* small display only */
+
+@media screen and (max-width:480px) {
+    .logo h1 {
+        font-size: 4rem;
+    }
+    .logo h2 {
+        font-size: 2.5rem;
+        margin-right: 25px;
+    }
+    .nav-container {
+        margin-bottom: 50px;
+    }
+    .title h2 {
+        font-size: 3.5rem;
+    }
+    .title h3 {
+        font-size: 2rem;
+        line-height: 35px;
+        letter-spacing: 7px;
+    }
+    #about {
+        padding: 100px 0;
+    }
+    #about .container {
+        grid-template-columns: 1fr;
+    }
+    #about p {
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+}
+
+
+/* landscape screens */
+
+@media screen and (max-height:500px) {
+    .nav-container {
+        margin-bottom: 30px;
+    }
+    .title h2 {
+        display: inline-block;
+        font-size: 3.2rem;
+        margin-right: 30px;
+    }
+    .title h3 {
+        font-size: 2rem;
+    }
+    #about {
+        padding: 100px 0;
+    }
+}
