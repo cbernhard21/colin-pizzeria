@@ -51,9 +51,8 @@
             <article class="order-form">
                 <form action="thanks.html">
 
-                    <!--------------------------- 
-                        CREATE OWN PIZZA SECTION 
-                    ------------------------------>
+                    <!-- CREATE OWN PIZZA SECTION  -->
+
                     <fieldset class="order-section pizza">
                         <legend>Create Your Own Pizza</legend>
                         <h3>Size</h3>
@@ -91,22 +90,25 @@
                             <li><input type="checkbox" id="provolone" name="topping" value="provolone"><label for="provolone">Provolone Cheese</label></li>
                             <li><input type="checkbox" id="parmesan" name="topping" value="parmesan"><label for="parmesan">Parmesan Cheese</label></li>
                         </ul>
+                        <div class="add-btn">Add To Order</div>
                     </fieldset>
 
-                    <!--------------------
-                           SALADS SECTION 
-                    ---------------------->
+
+                    <!-- SALADS SECTION  -->
+
 
                     <fieldset class="order-section">
                         <legend>Salads</legend>
-                        <!-- row for salad legends -->
+
+                        <!-- row for House salad legends -->
+
                         <div class="order-row">
                             <h3 class="order-item-col">Type Of Salad</h3>
                             <h3 class="order-qty-col">Qty.</h3>
                             <h3 class="order-add-col">Add</h3>
                         </div>
 
-                        <!-- row for salad order -->
+                        <!-- row for House salad order -->
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
@@ -115,43 +117,45 @@
                             </div>
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="houseSaladAmount" id="houseQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
-                        <!-- row for salad order -->
+
+                        <!-- row for Caesar salad order -->
+
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
                                 <input type="checkbox" id="caesarSalad" name="salad" value="caesarSalad">
-                                <label for="houseSalad">Caesar Salad</label>
+                                <label for="caesarSalad">Caesar Salad</label>
                             </div>
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="caesarSaladAmount" id="caesarQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
                         <!-- row for salad order -->
@@ -159,54 +163,54 @@
                             <!-- item column -->
                             <div class="order-item-col">
                                 <input type="checkbox" id="cobbSalad" name="salad" value="cobbSalad">
-                                <label for="houseSalad">Cobb Salad</label>
+                                <label for="cobbSalad">Cobb Salad</label>
                             </div>
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-
+                                <select name="cobbSaladAmount" id="cobbQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
-                        <!-- row for salad order -->
+
+                        <!-- row for Pizza salad order -->
+
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
                                 <input type="checkbox" id="pizzaSalad" name="salad" value="pizzaSalad">
-                                <label for="houseSalad">Pizza Salad</label>
+                                <label for="pizzaSalad">Pizza Salad</label>
                             </div>
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-
+                                <select name="pizzaSaladAmount" id="pizzaSaladQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
                     </fieldset>
 
-                    <!------------------------- 
-                          APPETIZER SECTION
-                    ----------------------------->
+
+                    <!-- APPETIZER SECTION -->
+
                     <fieldset class="order-section">
                         <legend>Appetizers</legend>
                         <!-- row for appetizer legends -->
@@ -216,107 +220,138 @@
                             <h3 class="order-add-col">Add</h3>
                         </div>
 
-                        <!-- row for appetizer order -->
+                        <!-- row for chips and salsa order -->
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
-                                <input type="checkbox" id="houseSalad" name="salad" value="houseSalad">
-                                <label for="houseSalad">House Salad</label>
+                                <input type="checkbox" id="chipsSalsa" name="appetizer" value="chipsSalsa">
+                                <label for="chipsSalsa">Chips and Salsa</label>
                             </div>
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="salsaAmount" id="salsaQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
-                        <!-- row for salad order -->
+
+                        <!-- row for cheese sticks order -->
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
-                                <input type="checkbox" id="houseSalad" name="salad" value="houseSalad">
-                                <label for="houseSalad">House Salad</label>
+                                <input type="checkbox" id="cheeseSticks" name="appetizer" value="cheeseSticks">
+                                <label for="cheeseSticks">Chesse Sticks</label>
                             </div>
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="cheeseSticksAmount" id="sticksQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
-                        <!-- row for salad order -->
+
+                        <!-- row for nachos order -->
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
-                                <input type="checkbox" id="houseSalad" name="salad" value="houseSalad">
-                                <label for="houseSalad">House Salad</label>
+                                <input type="checkbox" id="nachos" name="appetizer" value="nachos">
+                                <label for="nachos">Nachos</label>
                             </div>
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="nachosAmount" id="nachosQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
-                        <!-- row for appetizer order -->
+
+                        <!-- row for bbq wings order -->
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
-                                <input type="checkbox" id="houseSalad" name="salad" value="houseSalad">
-                                <label for="houseSalad">House Salad</label>
+                                <input type="checkbox" id="bbqWings" name="appetizer" value="bbqWings">
+                                <label for="bbqWings">BBQ Wings</label>
                             </div>
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="bbqWingsAmount" id="wingsQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
+
+                        <!-- row for pizza fries order -->
+                        <div class="order-row">
+                            <!-- item column -->
+                            <div class="order-item-col">
+                                <input type="checkbox" id="pizzaFries" name="appetizer" value="pizzaFries">
+                                <label for="pizzaFries">Pizza Fries</label>
+                            </div>
+                            <!-- qty col -->
+                            <div class="order-qty-col">
+                                <select name="pizzaFriesAmount" id="pizzaFriesQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
+
+                                    </select>
+                            </div>
+                            <!-- add button col -->
+                            <div class="order-add-col">
+                                <div class="add-btn">+</div>
+                            </div>
+                        </div>
+
+
                     </fieldset>
 
-                    <!-----------------------------
-                         SPECIALITY PIZZA SECTION 
-                    --------------------------------->
+
+                    <!-- SPECIALITY PIZZA SECTION  -->
+
+
                     <fieldset class="order-section">
                         <legend>Speciality Pizzas</legend>
                         <!-- row for speciality pizza legends -->
@@ -327,21 +362,21 @@
                             <h3 class="order-add-col">Add</h3>
                         </div>
 
-                        <!-- row for speciality pizza order -->
+                        <!-- row for Where's The Beef pizza order -->
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
-                                <input type="checkbox" id="specialPizza" name="pizza" value="somePizza">
-                                <label for="houseSalad">House Salad</label>
+                                <input type="checkbox" id="beefPizza" name="pizza" value="beefPizza">
+                                <label for="beefPizza">Where's the Beef</label>
                             </div>
 
                             <!-- size col -->
                             <div class="order-size-col">
-                                <select name="pizzaSize" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="small">Small</option>
-                                        <option value="large">Large</option>
-                                        <option value="deepDish">Deep Dish</option>
+                                <select name="pizzaSize" id="beefSize">
+                                        <option value="0" label="0"></option>
+                                        <option value="small" label="Small">Small</option>
+                                        <option value="large" label="Large">Large</option>
+                                        <option value="deepDish" label="deepDish">Deep Dish</option>
 
 
                                     </select>
@@ -349,58 +384,57 @@
 
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="specialityPizza" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-
+                                <select name="specialityPizza" id="beefQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
 
-                        <!-- row for speciality pizza order -->
+                        <!-- row for The Kitchen Sink pizza order -->
+
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
-                                <input type="checkbox" id="houseSalad" name="salad" value="houseSalad">
-                                <label for="houseSalad">House Salad</label>
+                                <input type="checkbox" id="kitchenSink" name="pizza" value="kitchenSink">
+                                <label for="kitchenSink">The Kitchen Sink</label>
                             </div>
 
 
                             <!-- size col -->
                             <div class="order-size-col">
-                                <select name="pizzaSize" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="small">Small</option>
-                                        <option value="large">Large</option>
-                                        <option value="deepDish">Deep Dish</option>
-
+                                <select name="pizzaSize" id="kitchenSinkSize">
+                                        <option value="0" label="0"></option>
+                                        <option value="small" label="Small">Small</option>
+                                        <option value="large" label="Large">Large</option>
+                                        <option value="deepDish" label="deepDish">Deep Dish</option>
 
                                     </select>
                             </div>
 
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="kitchenSinkAmount" id="kitchenSinkQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
 
@@ -408,56 +442,17 @@
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
-                                <input type="checkbox" id="houseSalad" name="salad" value="houseSalad">
-                                <label for="houseSalad">House Salad</label>
+                                <input type="checkbox" id="bbqPizza" name="pizza" value="bbqPizza">
+                                <label for="bbqPizza">BBQ Chicken</label>
                             </div>
 
                             <!-- size col -->
                             <div class="order-size-col">
-                                <select name="pizzaSize" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="small">Small</option>
-                                        <option value="large">Large</option>
-                                        <option value="deepDish">Deep Dish</option>
-
-
-                                    </select>
-                            </div>
-
-
-                            <!-- qty col -->
-                            <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-
-                                    </select>
-                            </div>
-
-                            <!-- add button col -->
-                            <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
-                            </div>
-                        </div>
-                        <!-- row for speciality pizza order -->
-                        <div class="order-row">
-                            <!-- item column -->
-                            <div class="order-item-col">
-                                <input type="checkbox" id="houseSalad" name="salad" value="houseSalad">
-                                <label for="houseSalad">House Salad</label>
-                            </div>
-
-                            <!-- size col -->
-                            <div class="order-size-col">
-                                <select name="pizzaSize" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="small">Small</option>
-                                        <option value="large">Large</option>
-                                        <option value="deepDish">Deep Dish</option>
+                                <select name="pizzaSize" id="bbqPizzaSize">
+                                        <option value="0" label="0"></option>
+                                        <option value="small" label="Small">Small</option>
+                                        <option value="large" label="Large">Large</option>
+                                        <option value="deepDish" label="deepDish">Deep Dish</option>
 
 
                                     </select>
@@ -466,197 +461,322 @@
 
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="bbqPizza" id="bbqPizzaQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
 
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
+
+                        <!-- row for Garden speciality pizza order -->
+
+                        <div class="order-row">
+                            <!-- item column -->
+                            <div class="order-item-col">
+                                <input type="checkbox" id="gardenPizza" name="pizza" value="gardenPizza">
+                                <label for="gardenPizza">Garden Fresh</label>
+                            </div>
+
+                            <!-- size col -->
+                            <div class="order-size-col">
+                                <select name="pizzaSize" id="gardenSize">
+                                        <option value="0" label="0"></option>
+                                        <option value="small" label="Small">Small</option>
+                                        <option value="large" label="Large">Large</option>
+                                        <option value="deepDish" label="deepDish">Deep Dish</option>
+
+
+                                    </select>
+                            </div>
+
+
+                            <!-- qty col -->
+                            <div class="order-qty-col">
+                                <select name="pizzaAmount" id="gardenQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
+
+                                    </select>
+                            </div>
+
+                            <!-- add button col -->
+                            <div class="order-add-col">
+                                <div class="add-btn">+</div>
+                            </div>
+                        </div>
+                        <!-- row for Hang 10 speciality pizza order -->
+                        <div class="order-row">
+                            <!-- item column -->
+                            <div class="order-item-col">
+                                <input type="checkbox" id="hang10Pizza" name="pizza" value="hang10Pizza">
+                                <label for="hang10Pizza">The Hang 10</label>
+                            </div>
+
+                            <!-- size col -->
+                            <div class="order-size-col">
+                                <select name="pizzaSize" id="hang10Size">
+                                        <option value="0" label="0"></option>
+                                        <option value="small" label="Small">Small</option>
+                                        <option value="large" label="Large">Large</option>
+                                        <option value="deepDish" label="deepDish">Deep Dish</option>
+
+
+                                    </select>
+                            </div>
+
+
+                            <!-- qty col -->
+                            <div class="order-qty-col">
+                                <select name="pizza" id="hang10Quantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
+
+                                    </select>
+                            </div>
+
+                            <!-- add button col -->
+                            <div class="order-add-col">
+                                <div class="add-btn">+</div>
+                            </div>
+                        </div>
+
+                        <!-- row for From The Sea speciality pizza order -->
+                        <div class="order-row">
+                            <!-- item column -->
+                            <div class="order-item-col">
+                                <input type="checkbox" id="seaPizza" name="pizza" value="seaPizza">
+                                <label for="seaPizza">From The Sea</label>
+                            </div>
+
+                            <!-- size col -->
+                            <div class="order-size-col">
+                                <select name="pizzaSize" id="seaSize">
+                                        <option value="0" label="0"></option>
+                                        <option value="small" label="Small">Small</option>
+                                        <option value="large" label="Large">Large</option>
+                                        <option value="deepDish" label="deepDish">Deep Dish</option>
+
+
+                                    </select>
+                            </div>
+
+
+                            <!-- qty col -->
+                            <div class="order-qty-col">
+                                <select name="pizzaAmount" id="seaQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
+
+                                    </select>
+                            </div>
+
+                            <!-- add button col -->
+                            <div class="order-add-col">
+                                <div class="add-btn">+</div>
+                            </div>
+                        </div>
+
                     </fieldset>
 
-                    <!------------------------------
-                            OTHER DISH SECTION 
-                    --------------------------------->
+
+                    <!-- OTHER DISH SECTION  -->
+
+
                     <fieldset class="order-section">
                         <legend>Other Dishes</legend>
-                        <!-- row for speciality pizza legends -->
+                        <!-- row for other dishes legends -->
                         <div class="order-row">
                             <h3 class="order-item-col">Choices</h3>
                             <h3 class="order-qty-col">Qty.</h3>
                             <h3 class="order-add-col">Add</h3>
                         </div>
 
-                        <!-- row for other dishes order -->
+                        <!-- row for Calzon order -->
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
-                                <input type="checkbox" id="specialPizza" name="pizza" value="somePizza">
-                                <label for="houseSalad">Calzone</label>
+                                <input type="checkbox" id="calzone" name="otherDishes" value="calzone">
+                                <label for="calzone">Calzone</label>
                             </div>
 
 
 
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="specialityPizza" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="calzoneAmount" id="calzoneQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
 
-                        <!-- row for other dishes order -->
+                        <!-- row for spaghetti order -->
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
-                                <input type="checkbox" id="houseSalad" name="salad" value="houseSalad">
-                                <label for="houseSalad">Spaghetti w/Meatball</label>
+                                <input type="checkbox" id="spaghetti" name="otherDishes" value="spaghetti">
+                                <label for="spaghetti">Spaghetti w/Meatball</label>
                             </div>
 
 
 
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="spaghettiAmount" id="spaghettiQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
 
-                        <!-- row for other dishes order -->
+                        <!-- row for Chesseburger order -->
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
-                                <input type="checkbox" id="houseSalad" name="salad" value="houseSalad">
-                                <label for="houseSalad">Cheeseburger w/Fries</label>
+                                <input type="checkbox" id="cheeseBurger" name="otherDish" value="cheeseBurger">
+                                <label for="cheeseBurger">Cheeseburger w/Fries</label>
                             </div>
 
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="cheeseBurgerAmount" id="cheeseBurgerQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
-                        <!-- row for other dishes order -->
+                        <!-- row for mac n cheese order -->
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
-                                <input type="checkbox" id="houseSalad" name="salad" value="houseSalad">
-                                <label for="houseSalad">Super Cheesy Mac n' Cheese</label>
+                                <input type="checkbox" id="macCheese" name="otherDish" value="macCheese">
+                                <label for="macCheese">Super Cheesy Mac n' Cheese</label>
                             </div>
 
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="macCheeseAmount" id="macCheeseQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
-                        <!-- row for other dishes order -->
+
+                        <!-- row for BBQ Chicken Dinner order -->
+
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
-                                <input type="checkbox" id="houseSalad" name="salad" value="houseSalad">
-                                <label for="houseSalad">BBQ Chicken w/Fresh Veggies</label>
+                                <input type="checkbox" id="bbqChickenDinner" name="otherDish" value="bbqChickenDinner">
+                                <label for="bbqChickenDinner">BBQ Chicken w/Fresh Veggies</label>
                             </div>
 
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="bbqChickenDinnerAmount" id="bbqChickenDinnerQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
-                        <!-- row for other dishes order -->
+
+                        <!-- row for Caesar Wrap order -->
+
                         <div class="order-row">
                             <!-- item column -->
                             <div class="order-item-col">
-                                <input type="checkbox" id="houseSalad" name="salad" value="houseSalad">
-                                <label for="houseSalad">Caesar Wrap w/fries</label>
+                                <input type="checkbox" id="caesarWrap" name="otherDish" value="caesarWrap">
+                                <label for="caesarWrap">Caesar Wrap w/fries</label>
                             </div>
 
                             <!-- qty col -->
                             <div class="order-qty-col">
-                                <select name="houseSalad" id="quantity">
-                                        <option value="0"></option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                <select name="caesarWrapAmount" id="caesarWrapQuantity">
+                                        <option value="0" label="0"></option>
+                                        <option value="1" label="1">1</option>
+                                        <option value="2" label="2">2</option>
+                                        <option value="3" label="3">3</option>
+                                        <option value="4" label="4">4</option>
+                                        <option value="5" label="5">5</option>
 
                                     </select>
                             </div>
                             <!-- add button col -->
                             <div class="order-add-col">
-                                <a href="#" class="add-btn">+</a>
+                                <div class="add-btn">+</div>
                             </div>
                         </div>
                     </fieldset>
 
-                    <!---------------------------
-                        CONFIRM AND SUBMIT
-                    ---------------------------->
+                    <!-- CONFIRM AND SUBMIT -->
+
                     <fieldset class="order-section">
                         <legend>Confirm Order and Submit</legend>
                         <input type="submit" value="Submit">
