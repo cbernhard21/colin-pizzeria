@@ -347,18 +347,6 @@ nav {
     background-color: #9d5540;
 }
 
-
-/* .title h2 {
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 8rem;
-    letter-spacing: 15px;
-    padding: 0;
-    margin: 0 75px 150px 0;
-    text-shadow: 2px 2px 5px #132238;
-} */
-
 .title-nav-button:hover {
     border-color: #854836;
 }
@@ -612,7 +600,7 @@ nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     max-height: 500px;
 }
 
@@ -622,6 +610,26 @@ nav {
 
 .menu-footer {
     font-size: 1.5rem;
+}
+
+.beer-selection {
+    max-height: 700px;
+}
+
+#beer {
+    background-image: linear-gradient(to top, rgba(44, 39, 39, 0.5) 10%, rgba(44, 39, 39, 0.5)), url('../images/beer-pour.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #f7f7f7;
+}
+
+.beer-title::after, .beer-selection h3::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-image: linear-gradient(to right, #f5b553, rgba(0, 0, 0, 0) 90%);
 }
 
 
@@ -798,7 +806,6 @@ nav {
   ---------------------------------- */
 
 #order {
-    /* background-color: rgba(0, 0, 0, 0.2); */
     background-color: #f7f7f7;
 }
 
@@ -853,7 +860,6 @@ nav {
     height: 3px;
     width: 100%;
     background-image: linear-gradient(to right, #854836, #f7f7f7 75%);
-    /* margin-top: -1px; */
 }
 
 .pizza h3::after {
@@ -1114,6 +1120,10 @@ footer form input[type=submit]:hover {
     #events article {
         width: 100%;
     }
+    #events .container {
+        height: 100%;
+        padding-bottom: 50px;
+    }
     /* ---------------------
           PHOTO GALLERY
     --------------------*/
@@ -1359,6 +1369,13 @@ footer form input[type=submit]:hover {
     }
     .menu-item-name {
         letter-spacing: 2px;
+    }
+    .beer-title::after, .beer-selection h3::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-image: linear-gradient(to right, #f5b553, rgba(0, 0, 0, 0) 90%);
     }
     /*------------------
           PHOTO GALLERY
