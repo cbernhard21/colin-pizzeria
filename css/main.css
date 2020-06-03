@@ -810,6 +810,10 @@ nav {
   ---------------------------------- */
 
 #order {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#order fieldset {
     background-color: #f7f7f7;
 }
 
@@ -842,6 +846,12 @@ nav {
     font-size: 3.5rem;
     font-weight: 500;
     padding: 2px 5px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    /* border-top: 1px solid black; */
+    /* border-right: 1px solid black; */
+    /* border-left: 1px solid black; */
+    border: 1px solid black;
 }
 
 .order label {
@@ -1459,6 +1469,12 @@ footer form input[type=submit]:hover {
         letter-spacing: 2px;
         margin-bottom: 10px;
     }
+    /*---------------------
+        FOOTER SECTION 
+      --------------------*/
+    footer form input[type='email'] {
+        margin-bottom: 15px;
+    }
 }
 
 
@@ -1469,7 +1485,7 @@ footer form input[type=submit]:hover {
 @media screen and (orientation: landscape) and (max-width: 768px) {
     /* common queries */
     #home .nav-container {
-        margin-bottom: 75px;
+        margin-bottom: 40px;
     }
     #home .title h2 {
         display: inline-block;
@@ -1512,8 +1528,7 @@ footer form input[type=submit]:hover {
     .title h2, #food .title h2 {
         display: inline-block;
         font-size: 3rem;
-        margin-right: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .title h3 {
         font-size: 2rem;
