@@ -628,8 +628,12 @@ nav {
     content: '';
     display: block;
     height: 3px;
-    width: 100%;
+    width: 90%;
     background-image: linear-gradient(to right, #f5b553, rgba(0, 0, 0, 0) 90%);
+}
+
+.beer-selection h3::after {
+    width: 50%;
 }
 
 
