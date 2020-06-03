@@ -1466,7 +1466,7 @@ footer form input[type=submit]:hover {
      LANDSCAPE SCREENS 
  -------------------------*/
 
-@media screen and (orientation: landscape) and (max-width: 700px) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
     /* common queries */
     #home .nav-container {
         margin-bottom: 75px;
