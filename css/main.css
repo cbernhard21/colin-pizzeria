@@ -1305,7 +1305,7 @@ footer form input[type=submit]:hover {
         margin-bottom: 50px;
     }
     #home .title h2 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         margin: 0;
     }
     #home .title h2:last-of-type {
@@ -1466,14 +1466,14 @@ footer form input[type=submit]:hover {
      LANDSCAPE SCREENS 
  -------------------------*/
 
-@media screen and (max-height: 650px) {
+@media screen and (orientation: landscape) {
     /* common queries */
     #home .nav-container {
         margin-bottom: 75px;
     }
     #home .title h2 {
         display: inline-block;
-        font-size: 4.5rem;
+        font-size: 2.8rem;
     }
     #home .title h2:last-of-type {
         margin-bottom: 25px;
@@ -1483,7 +1483,7 @@ footer form input[type=submit]:hover {
         background-color: #854836;
         color: #f7f7f7;
         font-size: 1.5rem;
-        width: 125px;
+        width: 100px;
         padding: 10px 0;
         text-align: center;
         border-radius: 10px;
